@@ -1,0 +1,27 @@
+﻿@model shiyuejiuhao1.Models.Location
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Location</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Choice.cname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Choice.cname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.lname }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Map1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>To Leamington</h2>
+        <p>
+           
+        </p>
+        <div>
+            <div>
+                Travel From : <input id="travelfrom" type="text" name="name" />
+                To : <input id="travelto" type="text" name="name" value="28A Leamington Cres" />
+                <input type="button" value="Get Route" onclick="GetRoute()" />
+            </div>
+            <br />
+            <div>
+                <div id="dvDistance">
+                </div>
+            </div>
+        </div>
+        <div id="dvMap" style="max-height:500px"></div>
+    </div>
+</div>
+
+
+<div id="map" style="width:100%;height:400px"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOUAfjByh7eSEVrv2ygMRrZo6MHLUB5og&libraries=places&language=en"></script>
+<script src="~/js/map.js"></script>
+
+
+
+
+
